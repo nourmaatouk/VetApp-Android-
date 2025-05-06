@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- 1. Toolbar -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_map_picker"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:title="Choose Location"
+        android:titleTextColor="@android:color/white" />
+
+    <!-- 2. Instruction Banner -->
+    <TextView
+        android:id="@+id/textView_map_instructions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#CC000000"
+        android:padding="8dp"
+        android:text="Tap anywhere on the map to select a location"
+        android:textColor="@android:color/white"
+        android:textSize="16sp" />
+
+    <!-- 3. OSMDroid MapView -->
+    <org.osmdroid.views.MapView
+        android:id="@+id/mapView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:clickable="true"
+        android:focusable="true" />
+
+    <!-- 4. Confirm Button -->
+    <Button
+        android:id="@+id/buttonConfirmLocation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Confirm Location"
+        android:backgroundTint="?attr/colorPrimary"
+        android:textColor="@android:color/white"
+        android:padding="12dp"
+        android:layout_margin="16dp" />
+
+</LinearLayout>

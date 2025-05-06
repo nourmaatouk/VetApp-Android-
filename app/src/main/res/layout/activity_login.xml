@@ -1,0 +1,60 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="32dp"
+    android:gravity="center"
+    android:background="@color/white">
+
+    <!-- Welcome Message TextView -->
+    <TextView
+        android:id="@+id/tvWelcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome to VetCare"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:layout_marginBottom="20dp"/>
+
+    <!-- Vet Image -->
+    <ImageView
+        android:id="@+id/ivVetPhoto"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/vet" />
+
+    <!-- Username EditText -->
+    <EditText
+        android:id="@+id/editUsername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nom d'utilisateur"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Password EditText -->
+    <EditText
+        android:id="@+id/editPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Mot de passe"
+        android:inputType="textPassword"
+        android:layout_marginBottom="32dp"/>
+
+    <!-- Login Button -->
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Se connecter"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Create Account Button -->
+    <Button
+        android:id="@+id/btnSignup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Create Account"
+        android:textColor="#000000" />
+
+</LinearLayout>

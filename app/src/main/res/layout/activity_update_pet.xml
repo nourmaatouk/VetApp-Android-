@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/textViewUpdatePetTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Update Pet Profile"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginBottom="16dp" />
+
+        <ImageView
+            android:id="@+id/imageViewPetPhoto"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_launcher_foreground" />
+
+        <EditText
+            android:id="@+id/editTextPetName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Pet Name" />
+
+        <EditText
+            android:id="@+id/editTextPetAge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:hint="Pet Age" />
+
+
+        <EditText
+            android:id="@+id/editTextRendezvous"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Next Rendezvous (cliquer pour choisir)"
+            android:focusable="false"
+            android:clickable="true"
+            android:padding="14dp"
+            android:textSize="16sp"
+            android:layout_marginBottom="16dp" />
+
+        <EditText
+            android:id="@+id/editTextLocation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Location" />
+
+
+
+        <Button
+            android:id="@+id/buttonSaveUpdate"
+            android:text="Save Changes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+</ScrollView>
